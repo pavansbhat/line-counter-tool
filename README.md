@@ -28,7 +28,18 @@ A command-line tool for counting lines of code, comments, and other metrics in s
 
 ### bash
 
-`node line-counter-code.js <file_path1> <file_path2>`
+```bash 
+node line-counter-code.js <file_path1> <file_path2>
+```
+
+
+
+### Testing
+Run the test using the following command:
+
+```bash
+node run_test.js
+```
 
 ## Output
 
@@ -60,6 +71,4 @@ A command-line tool for counting lines of code, comments, and other metrics in s
 - JavaScript/Java/C/C++: // for single-line, /\* \*/ for multi-line
 - Python: # for single-line, """ for multi-line
 
-```
 
-```
