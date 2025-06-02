@@ -11,7 +11,7 @@ class LanguageSyntax {
     if (name.toLowerCase() === 'java' || name.toLowerCase().includes('c-like') || name.toLowerCase() === 'default (c-like)') {
       this.importPattern = /^\s*import\s+[\w\.\*]+;/;
       this.classDeclarationPattern = /^\s*(public|private|protected)?\s*(static\s+)?(final\s+)?(abstract\s+)?class\s+\w+(\s*<\s*[\w\s\?,&<>]+>)?(\s+extends\s+\w+)?(\s+implements\s+[\w\s,]+)?\s*\{?/;
-      this.functionDeclarationPattern = /^\s*(public|private|protected|static|final|synchronized|abstract|native)*\s*[\w\.<>\[\]]+\s+\w+\s*\([\w\s\.<>\[\],:'"]*\)\s*(throws\s+[\w\s,]+)?\s*[\{;]?\s*$/;
+      this.functionDeclarationPattern = /^\s*(public|private|protected)?\s*(static)?\s*(final)?\s*[\w\.<>\[\]]+\s+\w+\s*\([^)]*\)\s*({|\s*throws)?/;
       this.interfaceDeclarationPattern = /^\s*(public|private|protected)?\s*(abstract\s+)?interface\s+\w+(\s*<\s*[\w\s\?,&<>]+>)?(\s+extends\s+[\w\s,]+)?\s*\{?/;
     } else if (name.toLowerCase() === 'python') {
       this.importPattern = /^\s*(import\s+[\w\.]+(\s+as\s+\w+)?|from\s+[\w\.]+\s+import\s+([\w\.]+(\s+as\s+\w+)?|\*))/;
