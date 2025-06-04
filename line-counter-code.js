@@ -1,3 +1,6 @@
+// IMPROVE THE FOLLOWING TOOL FURTHER
+
+
 const fs = require('fs');
 const path = require('path');
 
@@ -252,8 +255,7 @@ function processPaths(paths) {
 function main() {
   const inputPaths = process.argv.slice(2);
   if (inputPaths.length === 0) {
-    console.log("Usage: node line_counter.js <file_path_or_directory_path> [another_path...]");
-    console.log("\nDesign Considerations for Future Features are partially implemented or outlined in code comments.");
+    console.log("Usage: node line-counter-code.js <file_path_or_directory_path> [another_path...]");
     process.exit(1);
   }
 
